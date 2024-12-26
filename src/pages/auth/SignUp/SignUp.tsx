@@ -320,7 +320,7 @@ export const SignUp = (props) => {
                                                         <i className='th-outline-frame-1'></i>
                                                     </div>
                                                     <div className="admin-auth-card-title">
-                                                        <h2>Welcome to PureCharity</h2>
+                                                        <h2>Welcome to Infinite</h2>
                                                         <p>Your little help make big impact ❤️</p>
                                                     </div>
                                                     <div className="other-login">

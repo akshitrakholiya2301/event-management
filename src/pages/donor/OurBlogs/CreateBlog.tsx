@@ -532,17 +532,7 @@ const CreateBlog = (props) => {
                                         <button className="text-danger" onClick={handleDeleteShow}><i className='th-outline-trash'></i></button>
                                     </div>
 
-                                    {/* {
-                                        !isEmptyObjectOrNullUndefiend(addEditBlogFormData?.values?.blog_pic_name) &&
-                                        addEditBlogFormData?.values?.blog_pic_name.map((key, index) => (
-                                            <div key={index}>
-                                                <img src={key} alt="Pure Charity" />
-                                                <button
-                                                    onClick={() => { handleRemoveBlogImg(index) }}
-                                                >Remove</button>
-                                            </div>
-                                        ))
-                                    } */}
+                          
 
 
                                     <div className="file-input-darg-drop mt-2">

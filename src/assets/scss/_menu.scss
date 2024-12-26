@@ -732,7 +732,7 @@ $vz_body_bg: #1a1d21;
 .navbar-menu {
     width: 250px;
     z-index: 1002;
-    background: #0B0B25;
+    background: #091057;
     border-right: 1px solid $vz_vertical_menu_border;
     bottom: 0;
     margin-top: 0;
@@ -1014,6 +1014,7 @@ $vz_body_bg: #1a1d21;
 
 .logo {
     display: flex;
+    align-items: center;
 
     .logo-sm {
         display: none;
@@ -1022,7 +1023,7 @@ $vz_body_bg: #1a1d21;
 
         img {
             width: 100%;
-            height: auto;
+            height: 100%;
         }
     }
 
@@ -1032,7 +1033,7 @@ $vz_body_bg: #1a1d21;
 
         img {
             width: 100%;
-            height: auto;
+            height: 100%;
         }
     }
 }
@@ -2818,7 +2819,7 @@ $vz_body_bg: #1a1d21;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #0B0B25;
+    background-color: #091057;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 

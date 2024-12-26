@@ -27,7 +27,7 @@ const Dashboard = (props) => {
         <div className="error-page-content-wrapper">
           <div className="error-wrapper">
             <div className="error-image-details">
-              <h2>Welcome To Pure Charity</h2>
+              <h2>Welcome To Infinite</h2>
             </div>
           </div>
         </div>

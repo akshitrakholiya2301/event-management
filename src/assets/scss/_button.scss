@@ -273,7 +273,7 @@
 }
 
 .btn-grad-primary {
-    background: linear-gradient(104.18deg, #7209B7 0%, #B15CEA 100%);
+    background: linear-gradient(104.18deg, #EC8305 0%, #ffa73b 100%);
     color: $white_color;
     border-color: transparent;
     transition: all 0.5s;
@@ -283,7 +283,7 @@
     &:active,
     &:disabled,
     &:hover {
-        background: linear-gradient(104.18deg, #B15CEA 0%, #7209B7 100%);
+        background: linear-gradient(104.18deg, #ffa73b 0%, #EC8305 100%);
         color: $white_color !important;
         border-color: transparent !important;
         outline: none;
@@ -326,7 +326,7 @@
     &:active,
     &:disabled,
     &:hover {
-        background: linear-gradient(104.18deg, #EE75AC 0%, #F72585 100%);
+        background: linear-gradient(104.18deg, #024CAA 0%, #1a71e4 100%);
         color: $white_color !important;
         border-color: transparent !important;
         outline: none;

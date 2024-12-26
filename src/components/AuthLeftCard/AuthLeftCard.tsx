@@ -64,7 +64,7 @@ const AuthLeftCard = () => {
                     </div>
                     <div className="donor-auh-footer">
 
-                        <p>2024 © PureCharity Ltd</p>
+                        <p>2024 © Infinite</p>
                     </div>
                 </div>
             </div>

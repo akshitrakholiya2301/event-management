@@ -212,7 +212,7 @@ const Sidebar = (props) => {
             </li>
           </ul>
           <div className="sidebar-footer">
-            <p>© 2024 PureCharity</p>
+            <p>© 2024 Infinite</p>
           </div>
         </div>
         {/* <!-- Sidebar --> */}
