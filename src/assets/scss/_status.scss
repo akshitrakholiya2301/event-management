@@ -1,0 +1,136 @@
+.status {
+    padding: 4px 7px;
+    border-radius: 4px;
+    min-width: 80px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: fit-content;
+    block-size: fit-content;
+}
+
+.status-primary {
+    color: $white_color !important;
+    background-color: $primary_color;
+}
+
+.status-success {
+    color: $white_color !important;
+    background-color: $success_color;
+}
+
+.status-warning {
+    color: $white_color !important;
+    background-color: $warning_color;
+}
+
+.status-danger {
+    color: $white_color !important;
+    background-color: $danger_color;
+}
+
+.status-info {
+    color: $white_color !important;
+    background-color: $info_color;
+}
+
+.badge {
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+    width: fit-content;
+    block-size: fit-content;
+    background-color: #EAECEF;
+    color: $primary_color;
+
+    &.rounded-pill {
+        border-radius: 40px;
+        padding: 6px 12px;
+    }
+
+    &.badge-primary {
+        background-color: $primary_color;
+        color: $white_color;
+    }
+
+    &.badge-secondary {
+        background-color: $secondary_color;
+        color: $white_color;
+    }
+
+    &.badge-info {
+        background-color: $info_color;
+        color: $white_color;
+    }
+
+    &.badge-success {
+        background-color: $success_color;
+        color: $white_color;
+    }
+
+    &.badge-warning {
+        background-color: $warning_color;
+        color: $white_color;
+    }
+
+    &.badge-danger {
+        background-color: $danger_color;
+        color: $white_color;
+    }
+
+    &.badge-light {
+        background-color: #EAECF0;
+        color: $black_color;
+    }
+
+    &.badge-light-primary {
+        background-color: $primary_color;
+        color: $white_color;
+    }
+
+    &.badge-light-secondary {
+        background-color: $secondary_color;
+        color: $white_color;
+    }
+
+    &.badge-light-info {
+        background-color: $info_color;
+        color: $white_color;
+    }
+
+    &.badge-light-success {
+        background-color: #EFF9F2;
+        color: $success_color;
+    }
+
+    &.badge-light-warning {
+        background-color: #FFF6E8;
+        color: $warning_color;
+    }
+
+    &.badge-light-danger {
+        background-color: $danger_color;
+        color: $white_color;
+    }
+
+}
+
+.status-information {
+    padding: 4px 10px;
+    border-radius: 40px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: capitalize;
+    width: fit-content;
+    block-size: fit-content;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: $text_color;
+
+    i {
+        margin-right: 4px;
+    }
+}

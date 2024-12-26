@@ -1,0 +1,908 @@
+form {
+    width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+
+    .form-label {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: left;
+        color: $black_color;
+    }
+
+    .form-label-action {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+
+        .form-label {
+            margin-bottom: 0px;
+        }
+
+        button,
+        a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            border: 0px;
+            line-height: normal;
+        }
+    }
+
+    .form-select,
+    .form-control {
+        background-color: $white_color;
+        border: 1px solid $gray_color;
+        border-radius: 5px;
+        padding: 12px 15px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #777F90;
+
+
+        &:focus {
+            box-shadow: unset;
+            border-color: $primary_color ;
+        }
+    }
+
+    &.otp-group {
+
+
+        >div {
+            display: flex;
+            column-gap: 11px;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+
+            input {
+                width: 48px !important;
+                background-color: #F4F5F6;
+                border: 1px solid #E6EAEE;
+                color: #292D32;
+                text-align: center;
+
+
+                &:focus {
+                    background-color: #fff;
+                    border-color: #E6EAEE;
+                }
+            }
+        }
+
+
+
+
+    }
+
+    .form-control-icon {
+        position: relative;
+
+        &.icon-start {
+            i {
+                position: absolute;
+                left: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 2;
+            }
+
+            .form-select,
+            .form-control {
+                padding-left: 36px;
+            }
+        }
+
+        &.icon-end {
+            i {
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 2;
+            }
+
+            .form-select,
+            .form-control {
+                padding-right: 36px;
+            }
+        }
+
+        &.form-control-password {
+            .btn-password {
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                border: 0px;
+                padding: 0;
+                background-color: transparent;
+
+                i {
+                    left: unset;
+                    right: unset;
+                    position: relative;
+                }
+            }
+        }
+    }
+
+    &.file-darg-drop {
+        .file-input-darg-drop {
+            border: 1px dashed $gray_color;
+            border-radius: 8px;
+            padding: 20px;
+
+            position: relative;
+
+            .file-input-icon-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 16px 0px;
+
+                .file-input-icon {
+                    width: 37px;
+                    height: 37px;
+                    font-size: 17px;
+                    background-color: #F1E7F8;
+                    border-radius: 6px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $black_color;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 18.2px;
+                    text-align: left;
+                    color: $text_color;
+                    margin-bottom: 0px;
+
+                    span {
+                        color: $primary_color;
+                    }
+
+                }
+            }
+
+            input {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+        }
+
+        .file-darg-drop-image-wrapper {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0 20px;
+        }
+
+        .file-darg-drop-image {
+            position: relative;
+
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 6px;
+                object-fit: cover;
+            }
+
+            button {
+                position: absolute;
+                right: -10px;
+                top: -10px;
+                width: 20px;
+                height: 20px;
+                background: $primary_color;
+                border: 0px;
+                border-radius: 10px;
+                color: $white_color;
+                font-size: 15px;
+                line-height: 10px;
+            }
+        }
+    }
+
+    .form-text {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20.4px;
+        text-align: left;
+        color: $text_color;
+
+        i {
+            margin-right: 7px;
+        }
+    }
+
+    &.phone-number-group {
+        .input-group {
+            flex-wrap: nowrap;
+            gap: 0 10px;
+
+            .select-wrapper,
+            .form-select {
+                min-width: 150px;
+                width: auto;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+
+                .react-select-container {
+                    width: 100%;
+                }
+            }
+
+            .form-control-wrapper {
+                width: 100%;
+            }
+        }
+    }
+
+    .react-select-container1 {
+        position: relative;
+
+        &::before {
+            content: "\e935";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'techhive' !important;
+            z-index: 2;
+            display: none;
+        }
+
+        .css-t3ipsp-control,
+        .css-13cymwt-control {
+            background-color: $white_color;
+            border: 1px solid $gray_color;
+            border-radius: 5px;
+            padding: 0px 15px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #777F90;
+            width: 100%;
+            box-shadow: unset;
+            min-height: 50px;
+        }
+
+        .css-t3ipsp-control,
+        .css-13cymwt-control,
+        .css-t3ipsp-control {
+            &:hover {
+                border-color: $primary-color;
+                box-shadow: unset;
+            }
+
+            .css-151sz6c-indicatorContainer {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                padding: 0;
+                transform: translateY(-50%);
+                background-color: #fff;
+
+                &:first-child {
+                    z-index: 2;
+                }
+            }
+        }
+
+        .css-1fdsijx-ValueContainer {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #777F90;
+            padding: 0;
+            margin: 0;
+            padding: 0;
+
+            .css-qbdosj-Input {
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+
+
+        .css-1u9des2-indicatorSeparator {
+            display: none;
+        }
+
+        .css-15lsz6c-indicatorContainer {
+            padding: 0px;
+        }
+
+        .css-1xc3v61-indicatorContainer {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            padding: 0;
+            transform: translateY(-50%);
+            background-color: #fff;
+
+            &:first-child {
+                z-index: 2;
+            }
+        }
+
+        .react-datepicker-wrapper {
+            width: 100%;
+        }
+
+        .css-1p3m7a8-multiValue {
+            padding: 4px 10px;
+            background-color: #F1E7F8;
+            border-radius: 7px;
+
+            .css-wsp0cs-MultiValueGeneric {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20.83px;
+                text-align: left;
+                color: #292D32;
+                padding: 0px;
+            }
+
+            .css-12a83d4-MultiValueRemove {
+                background-color: transparent;
+                color: $black_color;
+            }
+        }
+    }
+
+    .react-select-container {
+
+        .css-13cymwt-control,
+        .css-t3ipsp-control {
+            background-color: #fff;
+            border: 1px solid #e6eaee;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #777f90;
+            min-height: 50px;
+            box-shadow: none;
+
+            &:hover {
+                border-color: $primary_color;
+            }
+        }
+
+        .css-t3ipsp-control {
+            box-shadow: none;
+        }
+
+        .css-1u9des2-indicatorSeparator {
+            display: none;
+        }
+    }
+
+    .form-select-sm {
+        background-color: #FFFFFF;
+        border: 1px solid #E6EAEE;
+        border-radius: 7px;
+        padding: 8px 10px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #777F90;
+        width: 100%;
+        box-shadow: unset;
+        padding-right: 30px;
+    }
+
+    .form-color-picker {
+        width: 100%;
+        display: flex;
+
+        .css-1yn2e29-InputColor {
+            background-color: $white_color;
+            border: 1px solid $gray_color;
+            border-radius: 5px;
+            padding: 12px 15px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #777F90;
+            min-height: 50px;
+            width: 100%;
+
+
+            &:focus {
+                box-shadow: unset;
+                border-color: $primary_color ;
+            }
+
+            .css-1vpurlb-InputColor {
+                display: none;
+            }
+        }
+
+    }
+
+    .color-picker-code {
+        position: absolute;
+        left: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-bottom: 0px;
+    }
+
+    &.from-input-file {
+        position: relative;
+
+        .form-control {
+            min-height: 50px;
+
+            input {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                opacity: 0;
+            }
+        }
+    }
+
+
+    .date-range {
+        width: 210px !important;
+    }
+}
+
+
+.from-input-file-name {
+    margin-top: 10px;
+
+    p {
+        padding: 4px 10px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.83px;
+        text-align: left;
+        color: #292D32;
+        background-color: #F1E7F8;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+
+        i {
+            padding: 0 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.filter-group {
+
+    margin-bottom: 0px;
+    width: fit-content;
+
+    span {
+        color: $gray_color;
+        font-size: 16px;
+    }
+
+    .form-select {
+        padding: 8px 30px 8px 10px !important;
+    }
+
+    &.filter-select {
+        width: 150px;
+    }
+
+    .form-select,
+    .form-control {
+        background-color: $white_color;
+        border: 1px solid $gray_color;
+        border-radius: 7px;
+        padding: 8px 10px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #777F90;
+        width: fit-content;
+
+        &:focus {
+            box-shadow: unset;
+            border-color: $primary_color ;
+        }
+    }
+
+    .form-control-icon {
+        position: relative;
+
+        &.icon-start {
+            i {
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .form-control {
+                padding-left: 30px;
+            }
+        }
+
+        &.icon-end {
+            i {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .form-control {
+                padding-right: 30px;
+            }
+        }
+
+        &.form-control-password {
+            .btn-password {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                border: 0px;
+                padding: 0;
+                background-color: transparent;
+
+                i {
+                    left: unset;
+                    right: unset;
+                    position: relative;
+                }
+            }
+        }
+    }
+
+
+    .react-select-container1 {
+        position: relative;
+
+        &::before {
+            content: "\e935";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'techhive' !important;
+            z-index: 2;
+            display: none;
+        }
+
+        .css-1nmdiq5-menu {
+            z-index: 22;
+        }
+
+        .css-t3ipsp-control,
+        .css-13cymwt-control {
+            background-color: $white_color;
+            border: 1px solid $gray_color;
+            border-radius: 7px;
+            padding: 8px 10px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            color: #777F90;
+            width: 100%;
+            box-shadow: unset;
+        }
+
+        .css-t3ipsp-control,
+        .css-13cymwt-control,
+        .css-t3ipsp-control {
+            &:hover {
+                border-color: $primary-color;
+                box-shadow: unset;
+            }
+
+            .css-151sz6c-indicatorContainer {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                padding: 0;
+                transform: translateY(-50%);
+                background-color: #fff;
+
+                &:first-child {
+                    z-index: 2;
+                }
+            }
+        }
+
+        .css-1fdsijx-ValueContainer {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            color: #777F90;
+            padding: 0;
+            margin: 0;
+            padding: 0;
+
+            .css-qbdosj-Input {
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+
+
+
+        .css-1u9des2-indicatorSeparator {
+            display: none;
+        }
+
+        .css-15lsz6c-indicatorContainer {
+            padding: 0px;
+        }
+
+        .css-1xc3v61-indicatorContainer {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            padding: 0;
+            transform: translateY(-50%);
+            background-color: #fff;
+
+            &:first-child {
+                z-index: 2;
+            }
+
+        }
+
+        .react-datepicker-wrapper {
+            width: 100%;
+        }
+    }
+
+    .react-select-container {
+
+        .css-13cymwt-control,
+        .css-t3ipsp-control {
+            min-height: 36px;
+            font-size: 12px;
+            box-shadow: none;
+            background-color: #FFFFFF;
+            border: 1px solid #E6EAEE;
+            border-radius: 7px;
+            font-weight: 400;
+            line-height: 18px;
+            color: #777F90;
+
+            &:hover {
+                border-color: $primary_color;
+            }
+        }
+
+        .css-t3ipsp-control {
+            box-shadow: none;
+        }
+
+        .css-1u9des2-indicatorSeparator {
+            display: none;
+        }
+    }
+
+    .react-datepicker__input-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &::before {
+            content: "\e9a1";
+            font-family: "techhive" !important;
+            position: absolute;
+            left: 8px;
+            top: 50%;
+            color: #777F90;
+            transform: translateY(-50%);
+            display: none;
+        }
+
+        svg {
+            display: none;
+        }
+    }
+}
+
+.profile-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 27px;
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .profile-content {
+        position: absolute;
+        right: -10px;
+        bottom: -10px;
+
+        .btn-fileupload {
+            width: 35px;
+            height: 35px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid $gray_color;
+            color: $black_color;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            input {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 3333;
+                opacity: 0;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+.btn-profile-edit {
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    width: 37px;
+    height: 37px;
+    padding: 10px;
+    font-size: 17px;
+    color: $black_color;
+    border-radius: 20px;
+    border: 1px solid $gray_color;
+    background-color: $white_color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                Switch Start                                */
+/* -------------------------------------------------------------------------- */
+.switch-box {
+    display: flex;
+    align-items: center
+}
+
+.switch-box span {
+    margin: 0 10px
+}
+
+.switch-box .switch {
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    width: 40px;
+    margin-bottom: 0
+}
+
+.switch-box .switch input {
+    display: none
+}
+
+.switch-box .slider {
+    background-color: #E6EAEE;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s
+}
+
+.switch-box .slider:before {
+    background-color: #FFFFFF;
+    bottom: 4px;
+    content: "";
+    height: 12px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 12px
+}
+
+.switch-box input:checked+.slider {
+    background-color: $primary_color
+}
+
+.switch-box input:checked+.slider:before {
+    transform: translateX(20px);
+    background-color: $white_color
+}
+
+.switch-box .slider.round {
+    border-radius: 34px
+}
+
+.switch-box .slider.round:before {
+    border-radius: 50%
+}
+
+.switch-box.switch-notallowed .slider {
+    cursor: not-allowed
+}
+
+.switch-box.switch-box-warning input:checked+.slider {
+    background-color: $warning_color
+}
+
+.switch-box.switch-box-danger input:checked+.slider {
+    background-color: $danger_color
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Switch End                                 */
+/* -------------------------------------------------------------------------- */

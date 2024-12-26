@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+.error-msg {
+    font-size: 13px !important;
+    margin-bottom: 0 !important;
+    color: $danger_color !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $black_color;
+    line-height: normal;
+}
+
+h1 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.2px;
+    color: $text_color;
+}
+
+ul {
+    &.icon-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27.2px;
+            padding-left: 30px;
+            color: $black_color;
+            position: relative;
+            margin-bottom: 10px;
+
+
+            &::before {
+                content: "\ec87";
+                font-family: 'techhive' !important;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                color: $primary_color;
+                font-size: 20px
+            }
+        }
+    }
+}
+
+/* --------------------------- bg icon with shape --------------------------- */
+.suqare-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+
+    i {
+        font-size: 20px;
+
+    }
+}
+
+.round-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+
+    i {
+        font-size: 20px;
+
+    }
+}
+
+.icon-light-primary {
+    background-color: #F2F6FF;
+    color: $primary_color;
+    border-color: #F2F6FF;
+}
+
+.icon-primary {
+    background-color: $primary_color;
+    color: $white_color;
+    border-color: $primary_color;
+}
+
+.icon-secondary {
+    background-color: $secondary_color;
+    color: $white_color;
+    border-color: $secondary_color;
+}
+
+.icon-success {
+    background-color: $success_color;
+    color: $white_color;
+    border-color: $success_color;
+}
+
+.icon-warning {
+    background-color: $warning_color;
+    color: $white_color;
+    border-color: $warning_color;
+}
+
+.icon-danger {
+    background-color: $danger_color;
+    color: $white_color;
+    border-color: $danger_color;
+}
+
+.icon-white {
+    background-color: $gray_color;
+    color: $black_color;
+    border-color: $gray_color;
+
+    &:hover {
+        background-color: $primary_color;
+        color: $white_color;
+        border-color: $primary_color;
+    }
+}
+
+.icon-outline-white {
+    background-color: $white_color;
+    color: $black_color;
+    border-color: $gray_color;
+}
+
+/* --------------------------- bg icon with shape --------------------------- */

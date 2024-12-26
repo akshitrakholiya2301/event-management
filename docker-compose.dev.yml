@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  app-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+
+
+
+
+# version: "3.8"
+
+# services:
+#   app:
+#     container_name: app-dev
+#     image: app-dev
+#     build:
+#       context: .
+#       target: development
+#     volumes:
+#       - ./src:/app/src
+#     ports:
+#       - 4800:4800

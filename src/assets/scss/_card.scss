@@ -1,0 +1,54 @@
+.card {
+    background-color: $white_color;
+    border: 0px;
+    box-shadow: 0px 10px 20px 0px #0000001A;
+    border-radius: 12px;
+
+    .card-body {
+        padding: 24px;
+    }
+}
+
+.card {
+    &.normal-card {
+        background-color: $white_color;
+        border: 0px;
+        box-shadow: 0px 10px 20px 0px #00000008;
+        border-radius: 10px;
+        border: 1px solid #E6EAEE;
+        height: 100%;
+    }
+
+    .card-body {
+        padding: 17px;
+        height: 100%;
+    }
+}
+
+.card {
+    &.paln-card {
+        background-color: $white_color;
+        border: 0px;
+        box-shadow: unset;
+        border-radius: 10px;
+        border: 1px solid #E6EAEE;
+    }
+
+    .card-body {
+
+        padding: 17px;
+
+        .paln-card-title {
+            margin-bottom: 15px;
+
+            h6 {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: $text_color;
+                margin-bottom: 0px;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.dropdown {
+    .dropdown-menu {
+        padding: 10px;
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.10);
+        border-radius: 10px;
+        border: 1px solid $gray_color;
+
+        .dropdown-item {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            color: $text_color;
+            padding: 6px 10px;
+            border-radius: 7px;
+
+            i {
+                margin-right: 10px;
+            }
+
+            &:hover {
+                background-color: #F4F5F6;
+                color: $primary_color;
+            }
+        }
+    }
+
+
+    &.card-action {
+        .dropdown-toggle {
+
+            &::after {
+                content: none;
+            }
+        }
+    }
+}

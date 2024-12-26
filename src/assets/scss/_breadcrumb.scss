@@ -1,0 +1,35 @@
+.breadcrumb{
+    margin-bottom: 0px;
+    .breadcrumb-item{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+        color: $primary_color;
+
+        &:nth-child(1){
+            &::before{
+                content: none;
+            }
+        }
+        &::before{
+            content: "\e93e";
+            font-family: 'techhive' !important;
+        }
+        a{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+            text-align: left;
+            color: $text_color;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        i{
+            margin-right: 10px;
+        }
+    }
+
+}
